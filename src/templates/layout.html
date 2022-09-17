@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velo City Pizza</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+    <link href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha256-kIefIGMekNBIvB4ALXeVJzrdfjpa4SUr6+PJ4BecqDM=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header">
+        {% include 'navbar.html' %}
+        <div class="headline-container">
+            <h1>Thin Crust Artisan Pizza</h1>
+            <h2>168 W 25th Ave </h2>
+            <h2>San Mateo, CA 94403</h2>
+            <h2>650-268-8100</h2>
+            <div class="headline-btn">
+                <a href="#description">Learn More</a>
+                <a href="#request">Order Now</a>
+            </div> <!--End Headline Container-->
+        </div> <!--End Background Texture-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+        </svg>
+    </header>
+    
+    <main role="main">
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

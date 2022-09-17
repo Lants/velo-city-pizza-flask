@@ -1,0 +1,693 @@
+/*-------APPLIES TO ALL-------*/
+* {
+    margin:0;
+    padding:0;
+}
+html {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+/*----------REUSABLE COMPONENTS----------*/
+.section-headline{
+    text-align: center;
+    font-size: 50px;
+    color: #4e4d4d;
+    font-weight: 300;
+}
+
+section{
+    padding: 70px 0;
+}
+
+.line{
+    background-color: lightgray;
+    width: 80px;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.row{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/*-----------------HEADER---------------------------*/
+
+.othernavbar{
+    background-color: #292E37;
+    background-color: rgba(0,0,0,0.8);
+}
+
+#header {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/mainpizza.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+/*--------PARALAX---------*/
+    background-attachment: fixed;
+}
+
+#header .background-texture {
+    background-image: url(../img/pattern-bg.png);
+    height: 100%;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+#header h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+#header h2 {
+    color: darkgray;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+#header .headline-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+#header .menu{
+  margin: 0 auto;
+  padding: 0;
+  width: 50vw;
+  height: 70vh;
+  transform: translate(50%, 30%);
+}
+
+    nav ul{
+    color: white;
+    list-style: none;
+    padding-right: 50px;
+    position: absolute;
+    top:50%;
+    right: 0;
+    transition: max-height 0.4s;
+    transform: translate(0,-50%);
+}
+
+#header li{
+    float: left;
+    padding: 0 15px;
+}
+
+#header nav img{
+    width: 150px;
+    padding-left: 20px;
+    height: 75px;
+}
+
+#header nav{
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    transition: background-color 2s;
+}
+
+#header a{
+    text-decoration: none;
+    color: white;
+
+}
+
+#header .headline-container a{
+    border: 1px solid white;
+    padding: 5px 15px;
+    font-size: 25px;
+    margin-right: 2px;
+}
+
+#header .headline-container a:hover, #header .headline-container a:active{
+    background-color: #24e098;
+    transition: background-color 1s;
+}
+
+#header .headline-btn{
+    margin-top: 8%;
+    position: relative;
+}
+
+
+#header svg{
+    color: white;
+    width: 40px;
+    height: 40px;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+
+}
+
+#header .orderbox{
+
+  height: 50vh;
+  width: 50vw;
+  border: 5px solid white;
+  position: relative;
+  text-align: center;
+  float:left;
+  padding: 5px 15px;
+  font-size: 25px;
+  margin-right: 2px;
+  position: relative;
+}
+
+/*------------DESCRIPTION------------*/
+
+#description{
+  padding-top: 0;
+  background-image: url(../img/stolenfromstan.jpg), linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+  background-position: center;
+  background-size: cover;
+}
+
+#description .section-headline{
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+
+}
+
+
+#description .line{
+  background-color: gray;
+
+}
+/*#description .background-texture {
+    background-image: url(../img/pattern-bg.png);
+    height: 100%;
+    background-repeat: repeat;
+    background-attachment: fixed;*/
+}
+
+#description img{
+    width: 60%;
+    float: right;
+}
+
+#description .circle{
+  margin-bottom: 60px;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    position: relative;
+    float: left;
+    margin-right: 20px;
+}
+
+#description h3{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+}
+
+#description h4{
+  color: white;
+    font-size: 25px;
+}
+
+#description p{
+    color: white;
+    font-weight: 400;
+    margin-right: 15px;
+}
+
+
+#description .steps-container{
+    overflow: auto;
+    margin: 30px 0;
+}
+#description .background-texture{
+  background-color:rgba(0,0,0,0.6);
+  padding-left: 1%;
+  padding-right: -1%;
+}
+
+/*-----------BENEFITS----------*/
+#benefits .span-1-of-3{
+    text-align: center;
+}
+
+#benefits{
+    background-color: rgb(244,244,244);
+    text-align: center;
+}
+
+
+#benefits i{
+    font-size: 60px;
+    color: #4e4d4d;
+}
+
+#benefits h3{
+    font-size: 30px;
+    color: #11939a;
+    margin: 20px 0;
+}
+
+#benefits p{
+    font-size: 18px;
+}
+
+#benefits img{
+    margin: 0, auto;
+}
+
+#benefits img{
+    border-bottom: 1px solid lightgray;
+    margin-top: 8%;
+    padding-bottom: 15px;
+    width: 80%;
+
+}
+
+#benefits a{
+    text-decoration: none;
+    color: #4a90e4
+}
+
+#benefits .btn{
+    background-color: #ff9f37;
+    color: white;
+    padding: 25px;
+    font-weight: 700;
+    display: block;
+    width: 300px;
+    margin: 0 auto; /*MAKE SURE THIS IS BEFORE MARGIN-TOP*/
+    margin-top: 20px;
+}
+
+/*----------STATS----------*/
+
+#stats{
+    height: 50vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/city2.jpg');
+    background-position: center;
+    background-size: cover;
+
+    text-align: center;
+
+    position: relative;
+}
+
+#stats i{
+    color: #549dc5;
+    font-size: 50px;
+}
+
+#stats p, #stats h3{
+    color: white;
+}
+
+#stats p{
+    font-size: 85px;
+    font-weight: 700;
+}
+
+#stats h3{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+#stats .row{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+/*------------------PRICING------------------*/
+#pricing{
+    background-color: rgb(244,244,244);
+}
+#pricing ul{
+    text-align: center;
+    border: 1px solid lightgray;
+    padding: 0 15%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#pricing ul li{
+    list-style: none;
+    padding: 15px 0;
+}
+
+#pricing .plan-name{
+    color: #4e4d4d;
+    font-size: 20px;
+    padding-bottom: 0;
+}
+#pricing .plan-price{
+    color: #549dc5;
+    font-size: 35px;
+    font-weight: 700;
+    padding-top: 0;
+}
+
+#pricing .plan-point{
+    font-size: 20px;
+    font-weight: 300;
+    color: #4e4d4d;
+}
+
+#pricing .border-bottom{
+    border-bottom: 1px solid lightgray;
+}
+#pricing a{
+    text-decoration: none;
+    background-color: #468eb5;
+    color: white;
+    padding: 10px 30px;
+}
+#pricing .extra-padding{
+    padding: 30px 0;
+}
+
+
+
+/*----------TEAM----------*/
+#team{
+    text-align: center;
+    color: #4e4d4d;
+
+}
+
+#team img{
+    width: 80%;
+}
+
+#team h3{
+    font-size: 30px;
+}
+
+#team i{
+    font-size: 40px;
+    color: #4e4d4d;
+}
+
+#team p{
+    font-size: 20px;
+}
+
+#team i, #team p, #team h3{
+    margin-top: 10px;
+}
+
+
+
+
+/*----------REQUEST----------*/
+#request{
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/driving1.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+#request .section-headline{
+    color: white;
+}
+
+#request .span-1-of-3{
+    text-align: right;
+
+}
+
+#request input[type="text"],
+#request input[type="email"],
+#request input[type="number"]{
+    width: 50%;
+    height: 30px;
+}
+
+#request input[type="submit"]{
+    background-color: #468eb5;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+}
+
+
+
+
+/*----------------FOOTER----------------*/
+
+#footer{
+    background-color: #292e37;
+    text-decoration: none;
+    padding: 30px 0;
+}
+
+#footer a{
+    text-decoration: none;
+    color: white;
+}
+
+#footer li{
+    list-style: none;
+    float: left;
+    padding: 0 20px;
+}
+
+#footer p{
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+#footer br{
+    display: none;
+}
+
+
+/*------------------------------------------------*/
+/*-------------------RESPONSIVE-------------------*/
+/*------------------------------------------------*/
+
+
+
+/*--------------------------HEADER--------------------------*/
+
+/*START this is for responsive nav bar*/
+.mobile-menu{
+    display:none;
+}
+
+@media only screen and (max-width: 700px) {
+    #header nav img{
+        display: none;
+    }
+    #header li{
+        float: none;
+        padding: 15px 0;
+        padding-left: 40px;
+    }
+    nav ul{
+        position: static;
+        max-height: 0;
+        overflow: hidden;
+        transform: translate(0,0);
+    }
+    #header nav{
+        background-color: #292E37;
+        padding-top: 0;
+        position: fixed;
+        width: 100%;
+        z-index: 99;
+        padding: 0;
+
+
+    }
+    .mobile-menu{
+        color: white;
+        padding: 15px 0;
+        padding-left: 20px;
+        display: block;
+    }
+     .show{
+        max-height: 300px;
+    }
+    #header h1{
+      font-size: 40px;
+    }
+}
+
+
+
+/*END this is for responsive nav bar*/
+
+
+
+
+
+@media only screen and (max-width: 790px){
+  #header .headline-container{
+    position:relative;
+    margin: 0 50px;
+  }
+}
+
+
+@media only screen and (max-width: 470px){
+    #header h1{
+        font-size: 35px;
+    }
+    #header h2{
+        font-size: 25px;
+    }
+    #header .headline-container a{
+        font-size: 20px;
+
+    }
+
+
+}
+/*----------------STEPS----------------*/
+@media only screen and (max-width: 435px){
+    #description .section-headline{
+        font-size: 35px;
+    }
+
+}
+
+@media only screen and (max-width: 1175px){
+    #description .span-1-of-2{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #description img{
+        width: 35%;
+        float: none;
+
+    }
+    #description .text-align-center{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    #description .circle{
+        float: none;
+        margin: 0 auto;
+    }
+    #description .text-align-center2{
+        text-align: center;
+    }
+}
+
+/*-------------BENEFITS-------------*/
+@media only screen and (max-width: 1200px){
+    #benefits .span-1-of-3{
+        width: 100%;
+        margin-left: 0;
+    }
+    #benefits p{
+        margin-bottom: 5%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    #benefits img{
+        display: none;
+    }
+    #benefits .btn{
+        width: 200px;
+    }
+}
+
+/*-----------------STATS-----------------*/
+@media only screen and (max-width: 1280px){
+    #stats i{
+        font-size: 7.5vh;
+    }
+    #stats p{
+        font-size: 5vh;
+    }
+    #stats h3{
+        font-size: 2vh;
+    }
+}
+@media only screen and (max-width: 1050px){
+    #stats .span-1-of-4{
+        width: 100%;
+        margin-left: 0;
+    }
+    #stats{
+        height: 55vh;
+    }
+
+}
+
+/*-----------PRICING-----------*/
+@media only screen and (max-width: 1000px){
+    #pricing .span-1-of-3{
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 0;
+        margin-bottom: 5%;
+    }
+}
+/*----------TEAM----------*/
+@media only screen and (max-width: 1000px){
+    #team .span-1-of-3{
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 35px;
+
+    }
+    #team img{
+        width: 40%;
+    }
+}
+
+/*----------REQUEST----------*/
+@media only screen and (max-width: 480px){
+    #request .span-1-of-3{
+        text-align: center;
+    }
+    #request .span-2-of-3{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+/*----------FOOTER----------*/
+@media only screen and (max-width: 1350px){
+    #footer .span-3-of-4, #footer .span-1-of-4{
+        width: 100%;
+        text-align: center;
+    }
+    #footer .span-3-of-4 ul li{
+        float: none;
+        display: inline;
+    }
+    #footer .span-1-of-4 ul li{
+        float: none;
+        display: inline;
+    }
+
+}
+@media only screen and (max-width: 650px){
+    #footer br{
+        display: block;
+    }
+}
