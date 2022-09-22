@@ -4,8 +4,10 @@
 #   Debug mode allows for arbitrary code executions from the deployed site.
 
 from flask import Flask, render_template, url_for, request
+from flask_socketio import SocketIO
 
 app = Flask(__name__)
+socketio = SocketIO(app)
 
 # Index (Home) page route
 @app.route("/")
@@ -14,9 +16,11 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-
-
+# Order Ahead (pickup) page route
+@app.route("/order_ahead")
+def order_ahead():
+    return render_template("order_ahead.html")
 
 
 if __name__ == '__main__':
-    app.run(debug=True) ### CHANGE ME TO FALSE FOR PUBLIC DEPLOYMENT
+    socketio.run(app, debug=True) ### CHANGE ME TO FALSE FOR PUBLIC DEPLOYMENT

@@ -299,6 +299,21 @@ section{
     font-size: 2vw;
 }
 
+/* ------------------ORDER_AHEAD--------------------------- */
+#order-ahead {
+    width: 100vw;
+    padding-top: 150px;
+    /* height: 100vh; */
+}
+
+#order-selections-container {
+    height: 90%;
+    width: 80%;
+    padding: 10px 3vw;
+    border-radius: 25px;
+    background-color: rgba(11, 4, 4, 0.8);
+}
+
 /*--------------------BENEFITS------------------------*/
 #benefits .span-1-of-3{
     text-align: center;

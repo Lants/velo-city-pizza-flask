@@ -3,8 +3,8 @@
 {% block content %}
 
 <header id="header">
+    {% include 'navbar.html' %}
     <div class="background-texture">
-        {% include 'navbar.html' %}
         <div class="headline-container">
             <h1>Velo City Pizza</h1>
             <h2>168 W 25th Ave</h2>
@@ -26,8 +26,8 @@
         <div class="order-options">
             <h1>Order Now</h1>
             <ul>
-                <li><a href="">Pickup</a></li>
-                <li><a href="">Delivery</a></li>
+                <li><a href="/order_ahead">Pickup</a></li>
+                <li><a href="https://www.grubhub.com/restaurant/velo-city-pizza-168-w-25th-ave-san-mateo/1458011">Delivery</a></li>
             </ul>
         </div>
     </div>
