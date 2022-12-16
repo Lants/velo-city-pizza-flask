@@ -153,3 +153,4 @@ cython_debug/
 
 # config
 *.ini
+config.py

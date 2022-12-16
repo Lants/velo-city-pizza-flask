@@ -1,0 +1,32 @@
+/* ------------------ORDER_AHEAD--------------------------- */
+#order-selections-container {
+    height: 90%;
+    width: 80%;
+    padding: 10px 3vw;
+    border-radius: 25px;
+    background-color: rgba(11, 4, 4, 0.8);
+}
+
+#order-selections-container h3, h2{
+    text-align: center;
+    color:rgb(255, 255, 255);
+    font-weight: 100;
+}
+
+.pizza-choice {
+    text-align: center
+}
+
+#order-ahead {
+    width: 100vw;
+    padding-top: 150px;
+    /* height: 100vh; */
+}
+
+
+#order-ahead h1 {
+    font-size: 4vw;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+}

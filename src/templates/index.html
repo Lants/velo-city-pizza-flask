@@ -1,15 +1,19 @@
 {% extends "layout.html" %}
 
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+{% endblock %}
+
 {% block content %}
 
 <header id="header">
     {% include 'navbar.html' %}
     <div class="background-texture">
         <div class="headline-container">
-            <h1>Velo City Pizza</h1>
-            <h2>168 W 25th Ave</h2>
-            <h2>San Mateo, CA 94403</h2>
-            <h2>650-268-8100</h2>
+            <h1 class="home-h1">Velo City Pizza</h1>
+            <h2 class="home-h2">168 W 25th Ave</h2>
+            <h2 class="home-h2">San Mateo, CA 94403</h2>
+            <h2 class="home-h2">650-268-8100</h2>
             <div class="headline-btn">
                 <a href="#description">Learn More</a>
                 <a href="#order">Order Online</a>
@@ -23,8 +27,8 @@
 
 <section id="order">
     <div class="red-overlay">
+        <h1>Order Now</h1>
         <div class="order-options">
-            <h1>Order Now</h1>
             <ul>
                 <li><a href="/order_ahead">Pickup</a></li>
                 <li><a href="https://www.grubhub.com/restaurant/velo-city-pizza-168-w-25th-ave-san-mateo/1458011">Delivery</a></li>

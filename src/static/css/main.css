@@ -1,168 +1,3 @@
-/*-------APPLIES TO ALL-------*/
-* {
-    margin:0;
-    padding:0;
-}
-html {
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-}
-
-/*----------REUSABLE COMPONENTS----------*/
-.section-headline{
-    text-align: center;
-    font-size: 50px;
-    color: #4e4d4d;
-    font-weight: 300;
-}
-
-section{
-    padding: 70px 0;
-}
-
-.line{
-    background-color: lightgray;
-    width: 80px;
-    height: 2px;
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
-
-/*-----------------HEADER---------------------------*/
-
-.othernavbar{
-    background-color: rgba(30, 29, 29, 0.745);
-}
-
-#header {
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/mainpizza.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-/*--------PARALlAX---------*/
-    background-attachment: fixed;
-}
-
-
-#header h1 {
-    color: white;
-    font-size: 70px;
-    font-weight: 400;
-    text-align: center;
-}
-
-#header h2 {
-    color: darkgray;
-    font-size: 30px;
-    font-weight: 300;
-    /* padding-left: 1em; */
-    text-align: center;
-}
-
-#header .headline-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    /* text-align: center; */
-}
-
-#header .menu{
-  margin: 0 auto;
-  padding: 0;
-  width: 50vw;
-  height: 70vh;
-  transform: translate(50%, 30%);
-}
-
-    nav ul{
-    color: white;
-    list-style: none;
-    padding-right: 50px;
-    position: absolute;
-    top:50%;
-    right: 0;
-    transition: max-height 0.4s;
-    transform: translate(0,-50%);
-}
-
-#header li{
-    float: left;
-    padding: 0 15px;
-}
-
-#header nav img{
-    width: 150px;
-    padding-left: 20px;
-    height: 75px;
-}
-
-#header nav{
-    padding: 15px 0;
-    position: fixed;
-    width: 100%;
-    z-index: 99;
-    transition: background-color 2s;
-}
-
-#header a{
-    text-decoration: none;
-    color: white;
-
-}
-
-#header .headline-container a{
-    border: 1px solid white;
-    padding: 5px 15px;
-    font-size: 25px;
-    margin-right: 2px;
-}
-
-#header .headline-container a:hover, #header .headline-container a:active{
-    background-color: #24e098;
-    transition: background-color 1s;
-}
-
-#header .headline-btn{
-    margin-top: 8%;
-    position: relative;
-    text-align: center;
-}
-
-#header .orderbox{
-    height: 50vh;
-    width: 50vw;
-    border: 5px solid white;
-    position: relative;
-    text-align: center;
-    float:left;
-    padding: 5px 15px;
-    font-size: 25px;
-    margin-right: 2px;
-    position: relative;
-}
-
-#header .background-texture {
-    background-image: url(../img/pattern-bg.png);
-    height: 100%;
-    background-repeat: repeat;
-    background-attachment: fixed;
-}
-
-
-#header svg{
-    color: white;
-    width: 40px;
-    height: 40px;
-
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0%);
-
-}
-
 
 /* -----------------ORDER---------------------- */
 #order {
@@ -178,13 +13,14 @@ section{
     width: 100%;
     height: 100%;
     background-color:rgba(11, 4, 4, 0.95);
-    padding: 70px 0;
+    padding: calc(10vw + 5px) 0;
 }
 
 #order h1 {
-    font-size: 5vw;
+    font-size: calc(1.5rem + 2vw);
     color: white;
     text-align: center;
+    width: 100vw;
 }
 
 #order .order-options {
@@ -271,10 +107,10 @@ section{
     font-size: 25px;
 }
 
-#description .steps-container{
+/* #description .steps-container{
     overflow: auto;
     margin: 30px 0;
-}
+} */
 
 #description .background-texture{
   background-color:rgba(0,0,0,0.7);
@@ -288,7 +124,6 @@ section{
 }
 
 #description h1 {
-    font-size: 3vw;
     color: rgb(204, 204, 204);
 }
 
@@ -296,22 +131,6 @@ section{
     color: rgb(204, 204, 204);
     font-weight: 400;
     margin-right: 15px;
-    font-size: 2vw;
-}
-
-/* ------------------ORDER_AHEAD--------------------------- */
-#order-ahead {
-    width: 100vw;
-    padding-top: 150px;
-    /* height: 100vh; */
-}
-
-#order-selections-container {
-    height: 90%;
-    width: 80%;
-    padding: 10px 3vw;
-    border-radius: 25px;
-    background-color: rgba(11, 4, 4, 0.8);
 }
 
 /*--------------------BENEFITS------------------------*/
