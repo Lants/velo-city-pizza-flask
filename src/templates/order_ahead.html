@@ -7,31 +7,41 @@
 {% block content %}
 
 <header id="header">
-    {% include "navbar.html" %}
     <div id="order-ahead">
-        <h1>Order Pickup</h1>
+        {% include "navbar.html" %}
         <div id="order-selections-container" class="container">
-            <!-- JS: ORDER SELECTIONS HEADER (back button, title, etc) -->
+            
+            <!-- TODO: ORDER SELECTIONS HEADER (back button, title, etc) -->
+<!------------------------ PIZZA CATEGORY ------------------------------------------------>
             <div id="order-selections-pizza" class="row">
                 <h2>Pizza</h2>
                 <br>
-                <div id="pizza-selections-16" class="col pizza-choice">
-                    <h3>16 inch</h3>
+                <button id="pizza-selections-16" class="pizza-choice">
+                    16 inch
+                </button>
+                <button id="pizza-selections-7" class="pizza-choice">
+                    7 inch
+                </button>
+                <button id="pizza-selections-calzone" class="pizza-choice">
+                    Calzone
                 </div>
-                <div id="pizza-selections-7" class="col pizza-choice">
-                    <h3>7 inch</h3>
-                </div>
-                <div id="pizza-selections-calzone" class="col pizza-choice">
-                    <h3>Calzone</h3>
+
+    <!---------------------- PIZZA OPTIONS: 16 INCH  ------------------------------>
+                <div class="pizza-toppings" id="row pizza-toppings-16">
+                    hello world
+                    FILL ME IN WITH JS (INFO FROM SQUARE TOOLS)
                 </div>
             </div>
             <div id="order-selections-r2" class="row">
-                
             </div>
         </div>
     </div>
 </header>
 
-<script src="https://cdn.socket.io/4.5.0/socket.io.min.js" integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k" crossorigin="anonymous"></script>
+<footer>
+  <p>FILL FOOTER (TODO)</p>
+</footer>
+
+<!-- <script src="https://cdn.socket.io/4.5.0/socket.io.min.js" integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k" crossorigin="anonymous"></script> -->
 <script src="{{ url_for('static', filename='js/order_ahead.js') }}"></script>
 {% endblock content %}

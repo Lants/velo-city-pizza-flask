@@ -12,11 +12,13 @@ else {
 
 function orderAheadInit() {
     console.log("Page Init: Order Ahead");
-    var socket = io.connect(base_url);
+    // var socket = io.connect(base_url);
 
-    socket.on('connect', function() {
-        socket.emit("order-ahead-ready")
-    });
+    // socket.on('connect', function() {
+    //     socket.emit("order-ahead-ready")
+    // });
 
-    let order_selections = document.getElementById('order-selections-r1c1');
+    let order_selections = document.getEle-1.12.2-14.23.5.2860.mentById('order-selections-r1c1');
+
+    
 }

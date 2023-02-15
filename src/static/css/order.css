@@ -1,16 +1,15 @@
-/* ------------------ORDER_AHEAD--------------------------- */
-#order-selections-container {
-    height: 90%;
-    width: 80%;
-    padding: 10px 3vw;
-    border-radius: 25px;
-    background-color: rgba(11, 4, 4, 0.8);
+/* Navbar Modifications */
+nav {
+    background-color: #292e37a8;
 }
 
-#order-selections-container h3, h2{
-    text-align: center;
-    color:rgb(255, 255, 255);
-    font-weight: 100;
+/* ------------------ORDER_AHEAD--------------------------- */
+#order-selections-container {
+    height: 100vh;
+    width: 30%;
+    position: absolute;
+    padding-top: 150px;
+    background-color: rgba(20, 5, 5, 0.745);
 }
 
 .pizza-choice {
@@ -19,7 +18,8 @@
 
 #order-ahead {
     width: 100vw;
-    padding-top: 150px;
+    padding: 0;
+    margin: 0;
     /* height: 100vh; */
 }
 
@@ -30,3 +30,38 @@
     font-weight: 400;
     text-align: center;
 }
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+#order-selections-container button {
+    text-align: center;
+    color:rgb(255, 255, 255);
+    font-weight: 100;
+    font-size: 2em;
+}
+
+#order-selections-container button {
+    background-color: rgba(206, 9, 9, 0.934);
+    position: relative;
+    border-radius: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 0px solid rgb(0, 0, 0);
+    width: 80%;
+    padding: 0.7em 0;
+    margin: 7px 0;
+}
+
+#order-selections-container button:hover {
+    background-color: rgba(153, 9, 4, 0.999);
+    transition: background-color 1s;
+}
+
+.pizza-toppings {
+    width: 100%;
+    /* display: none; */
+}
+

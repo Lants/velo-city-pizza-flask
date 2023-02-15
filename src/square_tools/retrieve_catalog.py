@@ -50,6 +50,17 @@ def categories_out(client):
 
     file.close()
 
+def topping_modifiers_out(client):
+    result = request_modifiers(client, "Add Toppings")
+    file = open("topping_modifiers.out", "w")
+
+    for mod_list in result['objects']:
+        for modifier in mod_list['modifier_list_data']['modifiers']:
+            file.write(f"{str(modifier['modifier_data']['name'])}: {str(modifier['modifier_data']['price_money']['amount'])}\n")
+        file.write("\n")
+    
+    file.close()
+
 
 if __name__ == "__main__":
     confirm_config()
@@ -61,12 +72,9 @@ if __name__ == "__main__":
     # result = request_catalog(client)
     # result = request_modifiers(client, "Add Toppings")
     categories_out(client)
+    topping_modifiers_out(client)
 
     
 
     # print(result['items'][1]['item_data'])
     
-    # for mod_list in result['objects']:
-    #     for modifier in mod_list['modifier_list_data']['modifiers']:
-    #         file.write(f"{str(modifier['modifier_data']['name'])}: {str(modifier['modifier_data']['price_money']['amount'])}\n")
-    #     file.write("\n")
