@@ -5,35 +5,37 @@
 {% endblock %}
 
 {% block content %}
-
 <header id="header">
+    {% include "navbar.html" %}
     <div id="order-ahead">
-        {% include "navbar.html" %}
-        <div id="order-selections-container" class="container">
-            
-            <!-- TODO: ORDER SELECTIONS HEADER (back button, title, etc) -->
-<!------------------------ PIZZA CATEGORY ------------------------------------------------>
-            <div id="order-selections-pizza" class="row">
+        <div id="order-categories">
+            <!------------------------ PIZZA CATEGORY ------------------------------------------------>
+            <section id="category-pizza">
                 <h2>Pizza</h2>
-                <br>
-                <button id="pizza-selections-16" class="pizza-choice">
-                    16 inch
-                </button>
-                <button id="pizza-selections-7" class="pizza-choice">
-                    7 inch
-                </button>
-                <button id="pizza-selections-calzone" class="pizza-choice">
-                    Calzone
-                </div>
+                {% for tuple in order_online['pizzas'] %}
+                    <button id="pizza-selections-{{ tuple[0].split(' ')[0].lower() }}" class="pizza-choice">{{ tuple[0] }}</button>
+                {% endfor %}
+            </section>
 
-    <!---------------------- PIZZA OPTIONS: 16 INCH  ------------------------------>
-                <div class="pizza-toppings" id="row pizza-toppings-16">
-                    hello world
-                    FILL ME IN WITH JS (INFO FROM SQUARE TOOLS)
-                </div>
-            </div>
-            <div id="order-selections-r2" class="row">
-            </div>
+            <!-- --------------------- STARTERS CATEGORY ------------------------------------- -->
+            <section id="category-starters">
+                <h2>Starters</h2>
+                {% for tuple in order_online['starters'] %}
+                        <button id="starters-selection-{{ tuple[0].split(' ')[0].lower() }}" class="starter-choice">{{ tuple[0].split('(')[0] }}</button>
+                {% endfor %}
+                
+            </section>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16" id="chevron-down">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+            </svg>
+        </div>
+
+        <div id="subcategory-container">
+            <div id="subcategory-pizza-16" class="subcategory"></div>
+            {% for tuple in starters %}
+                    <h2>{{ tuple[1] }}</h2>
+            {% endfor %}
+            
         </div>
     </div>
 </header>

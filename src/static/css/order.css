@@ -1,15 +1,23 @@
+/* Template Overrides */
+html {
+    overflow-x: auto;
+}
+
+section {
+    padding: 0.5rem 0 3rem 0;
+}
+
+header {
+    position: absolute;
+    min-height: 100vh;
+    background-attachment: fixed;
+    z-index: 1;
+    overflow: hidden;
+}
+
 /* Navbar Modifications */
 nav {
     background-color: #292e37a8;
-}
-
-/* ------------------ORDER_AHEAD--------------------------- */
-#order-selections-container {
-    height: 100vh;
-    width: 30%;
-    position: absolute;
-    padding-top: 150px;
-    background-color: rgba(20, 5, 5, 0.745);
 }
 
 .pizza-choice {
@@ -20,7 +28,7 @@ nav {
     width: 100vw;
     padding: 0;
     margin: 0;
-    /* height: 100vh; */
+    min-height: 100vh;
 }
 
 
@@ -36,15 +44,29 @@ h2 {
     color: white;
 }
 
-#order-selections-container button {
+/* -------------------------- ORDER CATEGORIES SIDEBAR -------------------------- */
+
+#order-categories {
+    height: 100vh;
+    width: 30%;
+    top: 0;
+    position: relative;
+    float: left;
+    background-color: rgba(20, 5, 5, 0.745);
+    overflow: auto;
+    z-index: 2;
+}
+
+#order-categories::-webkit-scrollbar {
+    display: none;
+}
+
+#order-categories button {
     text-align: center;
     color:rgb(255, 255, 255);
     font-weight: 100;
     font-size: 2em;
-}
-
-#order-selections-container button {
-    background-color: rgba(206, 9, 9, 0.934);
+    background-color: rgba(216, 33, 1, 0.779);
     position: relative;
     border-radius: 14px;
     left: 50%;
@@ -53,11 +75,50 @@ h2 {
     width: 80%;
     padding: 0.7em 0;
     margin: 7px 0;
+    transition: background-color 0.5s, border-radius 1s;
+    -webkit-transition: background-color 0.5s, border-radius 1s;
 }
 
-#order-selections-container button:hover {
+#order-categories button:hover {
     background-color: rgba(153, 9, 4, 0.999);
-    transition: background-color 1s;
+    border-radius: 0;
+    transition: background-color 0.5s, border-radius 1s;
+    -webkit-transition: background-color 0.5s, border-radius 1s;
+}
+
+#chevron-down {
+    z-index: 98;
+    position: sticky;
+    bottom: 2.7rem;
+    width: 50px;
+    height: 40px;
+    color: white;
+    background-color:rgba(13, 5, 5, 0.517);
+    padding: 5px 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+/* ------------------ PIZZA CATEGORY ----------------------- */
+#category-pizza {
+    padding-top: 150px;
+}
+
+
+/* ----------------------------- SUBCATEGORIES ------------------------------- */
+#subcategory-container {
+    margin: 150px 3rem;
+    float: left;
+    min-height: 60%;
+    position: absolute;
+    left: 30%;
+    width: calc(70% - 6rem);
+    background-color: rgba(207, 193, 193, 0.784);
+    border-radius: 30px;
+    display: none;
 }
 
 .pizza-toppings {
