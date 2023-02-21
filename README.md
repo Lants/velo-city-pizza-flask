@@ -1,3 +1,3 @@
 # Velo City Pizza
-Website for Velo City Pizza, San Mateo
-(Deprecated, porting to MERN stack for educational purposes)
+(Deprecated) Website for Velo City Pizza, San Mateo
+(Porting to MERN stack for educational purposes)
